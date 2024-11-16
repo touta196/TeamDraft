@@ -9,6 +9,8 @@
 #BlueTitle,
 #RedTitle {
     font-size: 28px;
+    font-weight: bold;
+    padding: 10px 0;
 }
 
 /* VS の見た目を調整 */
@@ -18,15 +20,29 @@
     margin-top: 40px;
 }
 
-
-.role-strength {
-    margin-bottom: 15px;
+/* チームメンバーの名前が改行されないようにする */
+.list-group-item {
+    white-space: nowrap;
+    /* 改行を防ぐ */
+    overflow: hidden;
+    /* 内容が長い場合に隠す */
+    text-overflow: ellipsis;
+    /* 長すぎる場合に「...」を表示 */
 }
 
-.form-group {
-    margin-bottom: 20px;
+/* プレイヤー登録の名前入力フィールドを調整 */
+#playerInputs .form-group input[type="text"] {
+    width: 100%;
+    /* 入力フィールドを親コンテナの幅いっぱいに */
+    box-sizing: border-box;
+    /* パディングを含めて計算 */
 }
 
-h1 {
-    margin-bottom: 30px;
+@media (max-width: 768px) {
+
+    #BlueTitle,
+    #RedTitle {
+        font-size: 24px;
+        /* モバイル時に少し小さく */
+    }
 }
