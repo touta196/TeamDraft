@@ -1,0 +1,32 @@
+/* Team Draft のタイトルを大きく */
+#title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 青チームと赤チームの見出しを大きく */
+#BlueTitle,
+#RedTitle {
+    font-size: 28px;
+}
+
+/* VS の見た目を調整 */
+#VS {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+
+.role-strength {
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}

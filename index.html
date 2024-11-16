@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チーム決め</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js" defer></script> <!-- 外部JavaScriptファイルを読み込み -->
+</head>
+
+<body>
+    <div class="container col-xs-12 col-sm-8 col-md-6 col-lg-4">
+        <div class="draft">
+            <div class="body">
+                <h1 id="title" class="symbol label label-default col-xs-12 text-center">Team Draft</h1>
+            </div>
+            <div class="row btn-row">
+                <div class="col-xs-5">
+                    <h2 id="BlueTitle" class="label label-primary text-center">青チーム</h2>
+                    <ul id="blueTeam" class="list-group">
+                        <li class="list-group-item">Tank</li>
+                        <li class="list-group-item">DPS</li>
+                        <li class="list-group-item">DPS</li>
+                        <li class="list-group-item">Support</li>
+                        <li class="list-group-item">Support</li>
+                    </ul>
+                    <h3 id="blueTeamPower" class="text-center">合計戦闘力: 0</h3>
+                </div>
+                <div class="col-xs-2 text-center">
+                    <h2 id="VS">VS</h2>
+                </div>
+                <div class="col-xs-5">
+                    <h2 id="RedTitle" class="label label-danger text-center">赤チーム</h2>
+                    <ul id="redTeam" class="list-group">
+                        <li class="list-group-item">Tank</li>
+                        <li class="list-group-item">DPS</li>
+                        <li class="list-group-item">DPS</li>
+                        <li class="list-group-item">Support</li>
+                        <li class="list-group-item">Support</li>
+                    </ul>
+                    <h3 id="redTeamPower" class="text-center">合計戦闘力: 0</h3>
+                </div>
+            </div>
+            <div class="text-center">
+                <button id="assignTeams" class="btn btn-primary">チームを振り分ける</button>
+            </div>
+        </div>
+        <div class="player-registration">
+            <h2 class="text-center">プレイヤー登録</h2>
+            <form id="playerForm">
+                <div id="playerInputs">
+                    <!-- プレイヤーごとに動的にフォームが生成されます -->
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
